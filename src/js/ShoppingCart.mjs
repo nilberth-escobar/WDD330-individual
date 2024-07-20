@@ -15,7 +15,7 @@ export default class ShoppingCart {
       element.forEach(item => {
         const remove = document.createElement("p")
         remove.classList.add("removeBtn");
-        remove.innerHTML = `<span>X</span>`;
+        remove.innerHTML = `<span>🗑️</span>`;
         item.appendChild(remove);
 
         remove.addEventListener("click", function (e) {
@@ -61,7 +61,6 @@ export default class ShoppingCart {
     }
 
         cartItemTemplate(item) {
-            console.log(item)
             return `<li id="${item.Id}" class="cartItem">
             <div class="cart-card divider">
             <a href="#" class="cart-card__image">

@@ -468,6 +468,31 @@ button {
   cursor: pointer;
 }
 
+.removeBtn{
+  cursor: pointer;
+  padding: 5px 5px 8px 8px;
+  width: 40px;
+}
+
+.removeBtn:hover{
+  background-color: #ed1b24;
+  color: #fff;
+  
+  
+  border: 1px solid #ccc;
+  animation: spin 2s linear infinite;
+  padding: 5px 5px 8px 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 500px) {
   body {
